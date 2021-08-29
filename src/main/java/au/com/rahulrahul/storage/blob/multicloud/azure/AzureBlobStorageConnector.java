@@ -41,7 +41,7 @@ public class AzureBlobStorageConnector
 
     public void put(byte[] b){
         
-        ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder().tenantId("68875856-d4c3-4a9e-b811-f4c886cb1a9d").clientId("712b0ede-42c6-47d7-bcbf-01b240f69a20").clientSecret("iD~HINyXz7pQ48-uTEwtboaRt9_3w_.Bt8").build();
+        ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder().tenantId("xxxx").clientId("xxxx").clientSecret("xxxx").build();
         BlobContainerClient containerClient = new BlobContainerClientBuilder().endpoint("https://testingapplication.blob.core.windows.net").containerName("app-container").credential(clientSecretCredential).buildClient();
         BlobClient blobClient = containerClient.getBlobClient("blobName");
         blobClient.uploadFromFile("C:/DP/RE_ Quote for MR Kloud from TLFC.pdf");
